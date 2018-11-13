@@ -51,6 +51,10 @@ body {
   font-size: 1rem;
 }
 
+.phone-nav {
+  display: none;
+}
+
 .headline {
   position: relative;
   top: 10rem;
@@ -135,4 +139,148 @@ footer {
 footer img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+/* Tablet Media Queries */
+@media only screen and (max-width: 1024px) {
+    .container {
+      width: 100%;
+    }
+
+    .header {
+    height: 22rem;
+    }
+
+    .header .container {
+      position: static;
+      top: auto;
+    }
+
+    .headline {
+      position: relative;
+      top: 5rem;
+    }
+
+    .headline h1 {
+      font-size: 1.33rem;
+      padding: 0.75rem 4rem;
+      float: right;
+      width: 40%;
+      margin-right: 2rem;
+    }
+
+    .about {
+      width: 80%;
+    }
+}
+
+/* Phone Media Queries */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .phone-nav {
+    display: inline;
+  }
+
+  .headline {
+    position: relative;
+    top: 9rem;
+    width: 100%;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3.77rem;
+  }
+
+  .service-block {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+  }
+
+  .service-block span {
+    font-size: 0.77rem;
+  }
+
+  #ruler,
+  #truck {
+    margin-left: 0;
+  }
+
+  #paper img {
+    width: 3.5rem;
+  }
+
+  #ruler img,
+  #truck img {
+    width: 5rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.77rem;
+  }
+
+  .about-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .info {
+    width: 90%;
+    margin: auto;
+    font-size: 0.77rem;
+    margin-bottom: 4rem;
+  }
+
+  footer {
+    background-color: azure;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer img {
+    height: 1.5rem;
+
+  }
+
+  footer span {
+    display: none;
+  }
 }
